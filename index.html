@@ -1,43 +1,89 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    	<meta charset="UTF-8">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<title>Maze Game</title>
- 	<style>
-        	body {
-            	font-family: Arial, sans-serif;
-            	background-color: #f0f0f0;
-            	text-align: center;
-            	padding: 50px;
-        	}
-        	h1 {
-        	    color: #333;
-        	}
-        	.cta-button {
-        	    padding: 10px 20px;
-        	    background-color: #007BFF;
-        	    color: white;
-        	    border: none;
-        	    border-radius: 5px;
-        	    cursor: pointer;
-		    text-decoration: none;
-		    display: inline-block;
-		    margin-bottom: 20px;
-		}
-		img {
-			max-width: 100%;
-			height: auto;
-			margin-top: 20px;
-		}
-    	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            margin-bottom: 20px; /* Space between button and image */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        section {
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-	<h1>Welcome to 3D Maze Game!</h1>
-	<p>Get ready to dive into a 3D maze adventure.</p>
-	<a href="https://github.com/p-prime1/2D_Maze_Project" class="cta-button">Play Now</a>
-	<img src="/images/making_progress.png", alt="Maze Game Play">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <h1>Welcome to Maze Game!</h1>
+    <p>Get ready to dive into a 3D maze adventure.</p>
+
+    <a href="https://p-prime1.github.io" class="cta-button">Play Now</a>
+
+    <!-- Image Section -->
+    <img src="images/making_progress.png" alt="Maze Game Image">
+
+    <!-- Sections for Navigation -->
+    <section id="about">
+        <h2>About the Game</h2>
+        <p>3D Maze Game is a fun adventerous 2D game renderred using Raycasting Algorithms to render 3D images. It is built using C and SDL2, Have fun as you navigate your way through the maze and watchout for obstacles also</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Nwaka Nduka Precious</p>
+	<p>Phone Number: 08031141362</p>
+    </section>
 </body>
 </html>
+
